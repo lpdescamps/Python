@@ -1,5 +1,6 @@
 # Python Scripts
 A list of various scripts that I'm using on different projects. Each scripts is nested under a subfolder with their own readme file.
+Click on one of them below to go straight in the subfolder.
 
 
 ## [Login Credential](https://github.com/lpdescamps/Python/tree/master/credential)

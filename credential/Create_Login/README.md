@@ -5,7 +5,7 @@ You will need to edit the info.csv with your details and edit Create_login.py FI
 >cryptography module
 
 ## info.csv
->Details
+>Details explaining each column
 * **username**: The username you will be using to log on your system
 * **password**: The password you will be using to log on your system
 * **role**: The permission of your account. The role will help to build the filename. It could be for example:

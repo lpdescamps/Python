@@ -24,5 +24,4 @@ You will need to edit the info.csv with your details and edit Create_login.py FI
 
 ![example_folder](example_folder.png)
 
-
-MyUsername,Don'tKnow,rx,EU,SQL,10.10.1.9,C:\tmp\credentials
+![example_info](example_info-csv.png)

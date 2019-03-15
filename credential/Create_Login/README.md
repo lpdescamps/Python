@@ -11,7 +11,7 @@ You will need to edit the info.csv with your details and edit Create_login.py FI
 * **role**: The permission of your account. The role will help to build the filename. It could be for example:
   * r for read
   * rw for read and write
-  * rwx fot read, write and execute
+  * rwx for read, write and execute
 * **region**: Where your system is located. The region will help to build the folder structure. it could be for example:
   * EU
   * GB

@@ -22,7 +22,7 @@ You will need to edit the info.csv with your details and edit Create_login.py FI
 * server: The server name or IP
 * path: Where you want to store the credential files
 
-![example_folder](/example_folder.png)
+![example_folder](example_folder.png)
 
 
 MyUsername,Don'tKnow,rx,EU,SQL,10.10.1.9,C:\tmp\credentials

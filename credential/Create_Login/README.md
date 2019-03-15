@@ -1,4 +1,4 @@
-# Login Credential - User guide
+# Create Login Credential - User guide
 You will need to edit the info.csv with your details and edit Create_login.py FILE variable with the location of the info.csv
 
 ## Dependencies

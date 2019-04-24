@@ -6,5 +6,8 @@ Click on one of them below to go straight in the subfolder.
 ## [Login Credential](https://github.com/lpdescamps/Python/tree/master/credential)
 >Instead of having clear credentials and server details, those scripts will create and read local files with your credentials. Password will be encrypted.
 
+## [CsvFileBuilder](https://github.com/lpdescamps/Python/tree/master/CsvFileBuilder)
+>Create a master CSV file with the first header to be used to split the master file into individual csv files. This can be handy where you need to work with large CSV files that you want to split into smaller file.
+
 ## [Next one](https://github.com/lpdescamps/)
 >I'm slow ...

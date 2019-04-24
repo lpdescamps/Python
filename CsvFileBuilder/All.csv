@@ -1,0 +1,2 @@
+CSV_file,Name,ISDNNumber,ISDNNumber2,ISDNBandwidth,Restrict,Telephone,SIP,H323,IPAddress,IPBandwidth,ExternalId
+file1,Data1,11154,545414,358,True,89745414,data1@git.hub,10.10.10.9,2500,hdkgfh75125,

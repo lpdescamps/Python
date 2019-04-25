@@ -7,10 +7,13 @@ PLATFORM = 'CUCM'
 ROLE = 'rwx'
 PATH = Path('C:\shared\API\credentials')
 
-username = PATH / REGION / PLATFORM / ('user_' + ROLE + '.txt')
-keyhash = PATH / REGION / PLATFORM / ('key_' + ROLE + '.txt')
-hash = PATH / REGION / PLATFORM / ('hash_' + ROLE + '.txt')
 server = PATH / REGION / PLATFORM / ('fqdn' + '.txt')
+
+def file(role):
+    username = PATH / REGION / PLATFORM / ('user_' + role + '.txt')
+    keyhash = PATH / REGION / PLATFORM / ('key_' + role + '.txt')
+    hash = PATH / REGION / PLATFORM / ('hash_' + role + '.txt')
+    yield username,keyhash,hash
 
 
 def crypto(keyhash, hash):
@@ -35,10 +38,10 @@ def read(file):
 
 
 def main():
-    print(read(username)[0])
-    print(crypto(keyhash, hash))
+    for right in file(ROLE):
+        print(read(right[0])[0])
+        print(crypto(right[1], right[2]))
     print(read(server)[0])
-
 
 if __name__ == '__main__':
     main()

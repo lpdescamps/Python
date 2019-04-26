@@ -13,7 +13,8 @@ def file(role):
     username = PATH / REGION / PLATFORM / ('user_' + role + '.txt')
     keyhash = PATH / REGION / PLATFORM / ('key_' + role + '.txt')
     hash = PATH / REGION / PLATFORM / ('hash_' + role + '.txt')
-    yield username,keyhash,hash
+
+    return (username, keyhash, hash)
 
 
 def crypto(keyhash, hash):
@@ -38,9 +39,9 @@ def read(file):
 
 
 def main():
-    for right in file(ROLE):
-        print(read(right[0])[0])
-        print(crypto(right[1], right[2]))
+
+    print(read(file(ROLE)[0])[0])
+    print(crypto(file(ROLE)[1], file(ROLE)[2]))
     print(read(server)[0])
 
 if __name__ == '__main__':

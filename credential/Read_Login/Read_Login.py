@@ -9,12 +9,13 @@ PATH = Path('C:\shared\API\credentials')
 
 server = PATH / REGION / PLATFORM / ('fqdn' + '.txt')
 
+
 def file(role):
     username = PATH / REGION / PLATFORM / ('user_' + role + '.txt')
     keyhash = PATH / REGION / PLATFORM / ('key_' + role + '.txt')
     hash = PATH / REGION / PLATFORM / ('hash_' + role + '.txt')
 
-    return (username, keyhash, hash)
+    return username, keyhash, hash
 
 
 def crypto(keyhash, hash):
@@ -40,9 +41,9 @@ def read(file):
 
 def main():
 
-    print(read(file(ROLE)[0])[0])
-    print(crypto(file(ROLE)[1], file(ROLE)[2]))
-    print(read(server)[0])
+    print('username:', read(file(ROLE)[0])[0])
+    print('password:', crypto(file(ROLE)[1], file(ROLE)[2]))
+    print('server:', read(server)[0])
 
 if __name__ == '__main__':
     main()

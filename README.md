@@ -11,5 +11,3 @@ Click on one of them below to go straight in the subfolder.
 
 ## [Next one](https://github.com/lpdescamps/)
 >I'm slow ...
-
-test
